@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/goalDisplay.css">
+    <title>goal 2</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">GABO<i id="eOnLogo">e</i></h1>
+        <div id="rightSide">
+            <div id="userContainer">
+                <h3 id="userOther">logged in as: </h3>
+                <h1>Senne</h1>
+            </div>
+            <a id="logoutButton" href="index.html">[Logout]</a>
+        </div>
+    </header>
+
+    <div class="box">
+        <a id="cancel" href="goalList.html">back</a>
+        <h1>goal 2</h1>
+
+        <div id="paramContainer">
+            <div id="achievableContainer">
+                <div class="achievablePart">Achievable</div>
+                <div id="achievableDescription"></div>
+                <form action="achievable.html" class="achievablePart">
+                    <div class="achievablePart">
+                        <input type="submit" value="Add Achievable"></input>
+                    </div>
+                </form> 
+            </div>
+            <div>
+                <div class="goalCol">
+                    <div class="goalParam">
+                        <label for="inCharge">Who is in charge</label>
+                        <input readonly type="text" id="inCharge" name="inCharge" placeholder="" value="Senne, Teun"></input>
+                    </div>
+                    <div class="goalParam">
+                        <label for="timeEstimate">Time estimate</label>
+                        <input readonly type="text" id="timeEstimate" name="timeEstimate" placeholder="" value="10 uur"></input>
+                    </div>
+                    <div class="goalParam">
+                        <label for="dueDate">Due date</label>
+                        <input readonly type="date" id="dueDate" name="dueDate" placeholder="" value="2023-01-16"></input>
+                    </div>   
+                </div>
+                <div class="goalCol">
+                    <div class="goalParam">
+                        <label for="progressIndicator">indactors of progress</label>
+                        <textarea readonly type="text" id="progressIndicator" class="bigInput" name="progressIndicator">the number of html pages completed</textarea>
+                    </div>
+                    <div class="goalParam">
+                        <label for="wayToAchieve">how the goal will be achieved</label>
+                        <textarea readonly type="text" id="wayToAchieve" class="bigInput" name="wayToAchieve">divide pages to be coded per person, work on it individually. when both are done work together to make it a whole</textarea>
+                    </div>
+                    <div class="goalParam">
+                        <label for="canBeAchieved">what realistically can be achieved</label>
+                        <textarea readonly type="text" id="canBeAchieved" class="bigInput" name="canBeAchieved">the website that we created here</textarea>
+                    </div> 
+                </div>
+
+                 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
