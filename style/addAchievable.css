@@ -1,0 +1,34 @@
+#addAchievableForm {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 10px;
+}
+
+#cancel {
+    align-self: flex-start;
+    flex:0;
+    padding: 0px
+}
+
+.achievableFormCol {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.achievableInput {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+label {
+    flex: 1; /*so every label box will have same padding/margin*/
+    font-size: 10;  
+}
+
+.bigInput { /*for bigger text boxes*/
+    padding-bottom: 150px;
+}
