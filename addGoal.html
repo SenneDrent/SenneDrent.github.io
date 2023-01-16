@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/general.css">
-    <link rel="stylesheet" href="style/goalDisplay.css">
+    <link rel="stylesheet" href="style/addGoal.css">
     <title>Add Goal</title>
 </head>
 <body>
@@ -19,56 +19,51 @@
                 <a id="logoutButton" href="index.html">[Logout]</a>
             </div>
         </header>
-    
-        
-    
         <form action="goalList.html" id="addGoalForm" class="box">
             <a id="cancel" href="goalList.html">cancel</a>
-                <div class="goalCol">
-                    <div class="goalParam"></div> <!--empty div for spacing -->
-                    <div class="goalParam">
+                <div class="goalFormCol">
+                    <div class="goalInput"></div>
+                    <div class="goalInput">
                         <label>Goal Name</label>
                         <input type="text" id="goalName" name="goalName" placeholder=""></input>
                     </div>
-                    <div class="goalParam"></div> <!--empty div for spacing -->
+                    <div class="goalInput"></div>
                 </div>
-                
-                <div class="goalCol">
-                    <div class="goalParam">
+    
+                <div class="goalFormCol">
+                    <div class="goalInput">
                         <label for="inCharge">Who is in charge</label>
                         <input type="text" id="inCharge" name="inCharge" placeholder=""></input>
                     </div>
-                    <div class="goalParam">
+                    <div class="goalInput">
                         <label for="timeEstimate">Time estimate</label>
                         <input type="text" id="timeEstimate" name="timeEstimate" placeholder=""></input>
                     </div>
-                    <div class="goalParam">
+                    <div class="goalInput">
                         <label for="dueDate">Due date</label>
                         <input type="date" id="dueDate" name="dueDate" placeholder=""></input>
                     </div>   
                 </div>
-                <div class="goalCol">
-                    <div class="goalParam">
+                <div class="goalFormCol">
+                    <div class="goalInput">
                         <label for="progressIndicator">indactors of progress</label>
-                        <textarea type="text" id="progressIndicator" name="progressIndicator" placeholder=""></textarea>
+                        <input type="text" id="progressIndicator" class="bigInput" name="progressIndicator" placeholder=""></input>
                     </div>
-                    <div class="goalParam">
+                    <div class="goalInput">
                         <label for="wayToAchieve">how the goal will be achieved</label>
-                        <textarea type="text" id="wayToAchieve" name="wayToAchieve" placeholder=""></textarea>
+                        <input type="text" id="wayToAchieve" class="bigInput" name="wayToAchieve" placeholder=""></input>
                     </div>
-                    <div class="goalParam">
+                    <div class="goalInput">
                         <label for="canBeAchieved">what realistically can be achieved</label>
-                        <textarea type="text" id="canBeAchieved" name="canBeAchieved" placeholder=""></textarea>
+                        <input type="text" id="canBeAchieved" class="bigInput" name="canBeAchieved" placeholder=""></input>
                     </div>
-                    
                 </div>
-    
-                <div class="goalCol">
-                    <div class="goalParam"></div> <!--empty div for spacing -->
-                    <div class="goalParam">
+                <div class="goalFormCol">
+                    <div class="goalInput"></div>
+                    <div class="goalInput">
                         <input type="submit" value="Create Goal"></input>
                     </div>
-                    <div class="goalParam"></div> <!--empty div for spacing -->
+                    <div class="goalInput"></div>
                 </div>   
         </form>
 </body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/addAchievable.css">
+    <title>Add Achievable</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">GABO<i id="eOnLogo">e</i></h1>
+        <div id="rightSide">
+            <div id="userContainer">
+                <h3 id="userOther">logged in as: </h3>
+                <h1>Senne</h1>
+            </div>
+            <a id="logoutButton" href="index.html">[Logout]</a>
+        </div>
+    </header>
+    
+        
+    
+    <form action="goalList.html" id="addAchievableForm" class="box">
+        <!-- the cancel option -->
+        <a id="cancel" href="goalList.html">cancel</a>
+        
+        <!-- title -->
+        <h1>
+            add achievable to the goal
+        </h1>
+
+        <!-- type dropdown box -->
+        <div class="achievableFormCol">
+            <div class="achievableInput"></div>
+            <div class="achievableInput">
+                
+                <label for="">Type of acievable:</label>
+                <!-- <input type="text">  -->
+                <select id="achievableType" name="achievableType">
+                    <option value="">Boolean</option>
+                    <option value="">Number</option>
+                </select>
+                
+            </div>
+            <div class="achievableInput"></div>
+        </div>
+
+        <!-- options  -->
+        <div class="achievableInput">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder=""></input>
+        </div>
+          
+        <div class="achievableInput">
+            <label for="Amount">Amount</label>
+            <input type="text" id="Amount" name="Amount" placeholder=""></input>
+        </div>
+
+        <!-- add button -->
+        <a id="add" href="goalList.html">add</a>
+        
+    </form>
+</body>
+</html>
