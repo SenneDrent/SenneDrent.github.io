@@ -1,5 +1,7 @@
 # SenneDrent.github.io
-My portfolio site
+My portfolio website, made in Sveltekit and TailwindCSS
+
+hosted on github pages, check it out at: https://sennedrent.github.io/
 
 # create-svelte
 
