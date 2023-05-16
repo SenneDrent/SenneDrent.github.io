@@ -2,6 +2,7 @@
     import { expoOut } from 'svelte/easing';
     import { fly } from 'svelte/transition';
     import "../app.css"
+    export const prerender = true;
     let collapse = false;
 
     function showCollapseNavBar() {
