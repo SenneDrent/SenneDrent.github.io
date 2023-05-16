@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/0.7c77a60e.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.9579c83a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c0ea25db.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.f06f0277.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.9ba85164.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.b2487eb1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.43b2fde4.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<div class=""><div class="min-h-screen min-w-screen bg-white dark:bg-mainSand dark:text-stone-200 font-extrabold"><div class="sticky top-0 z-50 bg-transparent"><button id="burger" class="absolute top-0 p-5 z-50 bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hover:stroke-red-100"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></button></div>
+        <div class="flex items-stretch">
+            <header class="sticky flex top-0 z-20 h-screen"><div class="flex flex-col flex-grow bg-green text-black p-3 pt-16 m-3"><nav class="flex flex-grow flex-col space-y-4"><a href="/" class="hover:text-red-100">Start</a>
+                        <a href="/#HiHorizonContainer" class="hover:text-red-100">Hi-Horizon racing team</a>
+                        <a href="/#contactContainer" class="hover:text-red-100">Contact Info</a></nav>
+                    <div class="text-sm text-bold space-y-2"><p>this website is made with:</p>
+                        <div class="flex justify-around"><a target="_blank" rel="noopener noreferrer" href="https://svelte.dev" class="hover:text-red-100">Svelte</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com" class="hover:text-red-100">TailwindCSS</a></div></div></div></header>
+        
+<div class="flex-1 text-center flex-row items-center"><div id="introContainer" class="flex justify-center items-center h-screen p-5"><h1 class="transition inline-block align-middle text-3xl">Welcome to the Portfolio of Senne Drent
+    </h1></div>
+    <div id="HiHorizonContainer" class="flex min-h-screen text-black p-3 text-left space-y-4"><div class="flex-grow bg-red p-3"><h1 class="pl-10 text-2xl">Hi-Horizon Racing Team</h1>
+        <p class="font-bold">Software programmer for a Boat driven by solarPower.
+            This project has been started with friends and we have been working since 2019. We are competing in the Solar Sport One races
+            were the goal is to make your Boat as efficient and fast as possible
+            I am in charge of programming for the embedded telemetry system inside the boat, as well as the data dashboard website.
+        </p>
+        <h2 class="text-xl">On board telemetry</h2>
+        <p class="font-bold">Part of my work is the on board telemetry systems, which gathers data from multiple sensors, and saves these locally on a SD card and 
+            display it on a screen inside the boat, but also sends data to an telemetry website through internet.
+            <br>
+            The system itself consist of multiple sensors coming from different components inside the boat,
+            like the motorcontroller, battery or solar panels.
+            These are connected to microcontrollers through a variety of connections with different data Protocols like UART, I2C, SPI and CANBUS.
+            THe microcontrollers used include boards which use the Arduino framework based on C++, like Teensy or ESP, but there is also being worked on using stm32
+            boards, using the stm32_HAL based on C.
+        </p>
+        <h2 class="text-xl">Telemetry Website</h2>
+        <p class="font-bold">This website is able to view the data collected from to boat on a dashboard. This is useful for strategy calculations we make on land, 
+            think of for example &quot;for long can we drive until the battery is empty?&quot;. The data is displayed asynchronously through AJAX request with the database.
+            Other features include being able to record periods of time so it can be viewed at with a graph.
+            <br>
+            The website gets this data through the MQTT protocol in which it receives data from the esp inside the boat. 
+            The website itself is made with PHP, javascript and sqllite.
+        </p></div></div>
+    <div id="contactContainer" class="flex items-center h-screen space-y-4 py-10 m-3"><div class="flex-grow space-y-4"><div class="inline-block text-left border-b-2"><h1 class="text-2xl text-center">Interested in working with me? Reach out to me through:</h1>
+            <ul class="py-6 space-y-2"><li>Email:    <a href="mailto:sennedrent@gmail.com" class="hover:text-red-100">sennedrent@gmail.com</a></li>
+                <li>Phone:  <a href="tel:+31612242235" class="hover:text-red-100">+31 6 12 24 22 35</a></li></ul></div>
+        <div><h2>Or find me at:</h2>
+            <div class="flex justify-center space-x-5"><a target="_blank" rel="noopener noreferrer" href="https://github.com/SenneDrent" class="hover:text-red-100">Github</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/SenneDrent" class="hover:text-red-100">Linkedn</a></div></div></div></div></div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_8k95kp = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.9579c83a.js"),
+						import("./_app/immutable/entry/app.9ba85164.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
