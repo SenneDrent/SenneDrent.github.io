@@ -1,6 +1,6 @@
-<div id="HiHorizonContainer" class="flex min-h-screen text-black p-3 text-left space-y-4">
-    <div class='flex-grow bg-red p-3'>
-        <h1 class="pl-10 text-2xl">Hi-Horizon Racing Team</h1>
+<div id="HiHorizonContainer" class="flex min-h-screen text-greenBlack p-16 text-left space-y-4 z-10">
+    <div class='flex-grow bg-red p-5 z-10'>
+        <h1 class="text-2xl">Hi-Horizon Racing Team</h1>
         <p class="font-bold">
             Software programmer for a Boat driven by solarPower.
             This project has been started with friends and we have been working since 2019. We are competing in the Solar Sport One races
