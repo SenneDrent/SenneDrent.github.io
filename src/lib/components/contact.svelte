@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+    export let contactContainerHeight: any;
+</script>
+
 <div id='contactContainer' class='flex items-center h-screen  space-y-4 p-16'>
     <div class="flex-grow space-y-4 p-5">
         <div class="inline-block text-left border-b-2">

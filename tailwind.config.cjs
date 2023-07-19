@@ -9,7 +9,9 @@ module.exports = {
       greenBlack: '#041d14',
       white: '#fffefb',
       red: '#951540',
-      green: '#15956a'
+      green: '#15956a',
+      lightRed: "#DBD3D6",
+      lightGreen: "#3DA884"
     },
     extend: {
       zIndex: {

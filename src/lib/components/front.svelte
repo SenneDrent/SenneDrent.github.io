@@ -1,42 +1,36 @@
 <script lang='ts'>
-    import {fade} from 'svelte/transition';
-    import { cubicOut } from 'svelte/easing';
-    import { onMount } from 'svelte';
+    import { YscrollStore } from '../../routes/+page.svelte'
 
-    let ready = false;
-    let onLoad = false;
-    onMount(() => onLoad = true);
+    let innerHeight: any;
+    let containerHeight: any;
+    let textboxHeight: any;
 
-    let Yscroll: any;
-    let introBlockHeigth: any;
+    let toAdjust = 0;
+    let distanceToBorder = 0;
+    let opacity = 1;
+    let isHidden = "";
 
-    function slidefade(node: Element, params: { delay:any, duration:any, easing:any, y:any}) {
-        const existingTransform = getComputedStyle(node).transform.replace('none', '');
-
-        return {
-            delay: params.delay || 0,
-            duration: params.duration || 400,
-            easing: params.easing || cubicOut,
-            css: (t:any, u:any) => `transform-origin: top left; transform: ${existingTransform} translateY(${params.y*u*2}px); opacity: ${t};`
-        };
-    }
-
+    //calculates the animation for scrolling away and to this component
     $: {
-        if (introBlockHeigth - (Yscroll * 2) <= 0) {
-            ready = false;
+        //distance between the bottom of the container and the bottom of the textBox
+        distanceToBorder = containerHeight + (Math.floor(textboxHeight/2)) - Math.floor($YscrollStore*2);
+        if( distanceToBorder < 0) {
+            console.log(-distanceToBorder)
+            if (-distanceToBorder < 400) toAdjust = -distanceToBorder * 1.5;
+            if (-distanceToBorder > 400) opacity = 0
+            else opacity = 1 - (-distanceToBorder/400);
         }
         else {
-            ready = true;
-        };
+            toAdjust = 0
+            opacity = 1
+        }
     }
 </script>
 
-<svelte:window bind:scrollY={Yscroll}/>
+<svelte:window bind:innerHeight={innerHeight} />
 
-<div bind:clientHeight={introBlockHeigth} id="introContainer" class="flex justify-center items-center h-screen p-12">
-    {#if ready && onLoad}
-    <h1 in:slidefade={{delay: 0,duration: 1000, easing: cubicOut, y:-10}} out:slidefade={{delay: 0,duration: 200, easing: cubicOut, y:-40}} class="fixed inline-block align-middle text-3xl">
+<div bind:clientHeight={containerHeight} id="introContainer" class="flex justify-center items-center h-screen p-12">
+    <h1 bind:clientHeight={textboxHeight} style="margin-bottom: {toAdjust}px; opacity: {opacity}" class="fixed inline-block align-middle text-3xl p-5 overflow-hidden">
         Welcome to the Portfolio of Senne Drent
     </h1>
-    {/if}
 </div>
