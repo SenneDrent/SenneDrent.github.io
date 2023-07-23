@@ -7,11 +7,13 @@ module.exports = {
     colors: {
       redBlack: '#3d0a1f',
       greenBlack: '#041d14',
-      white: '#fffefb',
-      red: '#951540',
-      green: '#15956a',
-      lightRed: "#DBD3D6",
-      lightGreen: "#3DA884"
+      white: '#FCE9DA',
+      red: '#D00000',
+      yellow: '#FFBA08',
+      blue: '#2B3A67',
+      // green: '#1EFFBC',
+      lightRed: "#FCE9DA",
+      lightGreen: "#041d14"
     },
     extend: {
       zIndex: {

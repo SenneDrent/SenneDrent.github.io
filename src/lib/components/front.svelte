@@ -13,7 +13,7 @@
     //calculates the animation for scrolling away and to this component
     $: {
         //distance between the bottom of the container and the bottom of the textBox
-        distanceToBorder = containerHeight + (Math.floor(textboxHeight/2)) - Math.floor($YscrollStore*2);
+        distanceToBorder = containerHeight - (Math.floor(textboxHeight/2)) - Math.floor($YscrollStore*2);
         if( distanceToBorder < 0) {
             console.log(-distanceToBorder)
             if (-distanceToBorder < 400) toAdjust = -distanceToBorder * 1.5;

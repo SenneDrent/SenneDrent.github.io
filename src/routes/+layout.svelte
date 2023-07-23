@@ -1,7 +1,7 @@
 <script>
     import { expoOut } from 'svelte/easing';
     import { fly } from 'svelte/transition';
-    import { spring } from "svelte/motion";
+    import { slides } from './+page.svelte';
     import "../app.css"
     let collapse = true;
 
@@ -11,7 +11,7 @@
 </script>
 
 <div class=''>
-    <div class='min-h-screen min-w-screen dark:bg-mainSand dark:text-stone-200 font-extrabold'>
+    <div class='min-h-screen min-w-screen font-extrabold'>
         <div class="sticky top-0 z-50 bg-transparent">
             <button id="burger" on:click={showCollapseNavBar} class="absolute top-0 p-5 z-50 bg-transparent">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hover:stroke-red">
@@ -23,10 +23,11 @@
             <!-- NavBar -->
             {#if collapse === false}
             <header transition:fly|local={{duration: 150, opacity: 1, easing: expoOut, x:-150}} class="sticky flex top-0 z-20 h-screen">
-                <div class="flex flex-col flex-grow bg-green border-lightGreen border-8 text-redBlack  p-3 pt-16 m-3">
+                <div class="flex flex-col flex-grow bg-green border-lightGreen border-8 text-redBlack p-3 pt-16 m-3">
                     <nav class="flex flex-grow flex-col space-y-4">
                         <a href="/" class="hover:text-red">Start</a>
                         <a href="/#HiHorizonContainer" class="hover:text-red">Hi-Horizon racing team</a>
+                        <a href="/#TuDelftContainer" class="hover:text-red">College</a>
                         <a href="/#contactContainer" class="hover:text-red">Contact Info</a>
                     </nav>
                     <div class="text-sm text-bold space-y-2">
