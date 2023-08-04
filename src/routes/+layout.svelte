@@ -10,7 +10,7 @@
     }
 </script>
 
-<div class=''>
+<div>
     <div class='min-h-screen min-w-screen font-extrabold'>
         <div class="sticky top-0 z-50 bg-transparent">
             <button id="burger" on:click={showCollapseNavBar} class="absolute top-0 p-5 z-50 bg-transparent">

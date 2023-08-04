@@ -29,7 +29,7 @@
 
 <svelte:window bind:scrollY={Yscroll}/>
 
-<div class='flex-1 text-center flex-row items-center'>
+<div class='flex text-center flex-col items-center'>
         {#each slides as slide}
             {#if slide.length === 1}
                 <svelte:component this={slide[0]} />
