@@ -34,7 +34,7 @@
             {#if slide.length === 1}
                 <svelte:component this={slide[0]} />
             {:else if slide.length === 2}
-                <div class="flex">
+                <div class=" w-full flex justify-between">
                     <svelte:component this={slide[0]}/>
                     <svelte:component this={slide[1]}/>
                 </div>

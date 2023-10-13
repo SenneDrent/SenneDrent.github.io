@@ -6,15 +6,15 @@ module.exports = {
   theme: {
     colors: {
       redBlack: '#3d0a1f',
-      greenBlack: '#041d14',
-      coldWhite: '#F9F0F3',
-      warmWhite: "#FFF2EB", 
       red: '#D00000',
       yellow: '#FFBA08',
       blue: '#2B3A67',
-      // green: '#1EFFBC',
+      green: '#1EFFBC',
       lightRed: "#FCE9DA",
-      lightGreen: "#041d14"
+      lightGreen: "#041d14",
+      coldWhite: '#F9F0F3',
+      warmWhite: "#FFF2EB", 
+      warmDark: "#281001"
     },
     extend: {
       zIndex: {
