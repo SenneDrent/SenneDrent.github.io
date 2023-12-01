@@ -41,7 +41,7 @@
 
 <div bind:clientHeight={containerHeight} id="introContainer" class="flex justify-center items-center h-screen p-12">
     {#if onLoad === true}
-        <h1 in:fade={{duration: 1250}} bind:clientHeight={textboxHeight} style="margin-bottom: {toAdjust}px; opacity: {opacity};" class="fixed {display} align-middle text-3xl p-5 overflow-hidden opacity-0">
+        <h1 in:fade={{duration: 1250}} bind:clientHeight={textboxHeight} style="margin-bottom: {toAdjust}px; opacity: {opacity};" class="fixed {display} align-middle text-3xl p-5 font-extrabold overflow-hidden opacity-0">
             Welcome to the Portfolio of Senne Drent
         </h1>
     {/if}

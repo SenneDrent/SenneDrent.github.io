@@ -29,14 +29,18 @@
 
 <svelte:window bind:scrollY={Yscroll}/>
 
-<div class='flex text-center flex-col items-center'>
+<div class='container flex text-center flex-col items-stretch w-full px-2 md:px-8 lg:px-16'>
         {#each slides as slide}
             {#if slide.length === 1}
                 <svelte:component this={slide[0]} />
             {:else if slide.length === 2}
-                <div class=" w-full flex justify-between">
-                    <svelte:component this={slide[0]}/>
-                    <svelte:component this={slide[1]}/>
+                <div class="flex gap-8 justify-between flex-wrap">
+                    <div class="flex-1 flex">
+                        <svelte:component this={slide[0]}/>
+                    </div>
+                    <div class="flex-1 flex">
+                        <svelte:component this={slide[1]}/>
+                    </div>
                 </div>
             {/if}
         {/each}
