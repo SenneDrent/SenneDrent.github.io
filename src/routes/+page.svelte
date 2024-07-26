@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
     export const YscrollStore = writable(0);
+    export const onLoad = writable(false);
 
     export let slides = 
     [
@@ -19,9 +20,7 @@
     import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
 
-    let onLoad = false;
-
-    onMount(() => onLoad = true);
+    onMount(() => onLoad.set(true));
 
     let Yscroll: any;
     $: YscrollStore.set(Yscroll);    

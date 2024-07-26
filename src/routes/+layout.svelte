@@ -1,9 +1,5 @@
 <script>
-    import { expoOut } from 'svelte/easing';
-    import { fly } from 'svelte/transition';
-    import { YscrollStore, slides } from './+page.svelte';
     import "../app.css"
-    import Navigator from '@components/navigator.svelte';
 </script>
 
 <div>

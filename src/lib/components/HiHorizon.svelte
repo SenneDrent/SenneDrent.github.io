@@ -8,7 +8,6 @@
     $: HiHorizonContainerHeightStore.set(HiHorizonContainerHeight);
 
     let HiHorizonTextHeight: any;
-    $: console.log(HiHorizonTextHeight);
 </script>
 
 <!-- 
@@ -51,5 +50,5 @@ if text smaller than screen: side fit that stretch until max-h-screen
         </div>
     </Frame>
     </div>    
-    <div style="flex:1 1 0" class="h-[200px] lg:h-auto bg-[url(hi-horizon/me_working.jpg)] bg-cover bg-center"></div>
+    <!-- <div style="flex:1 1 0" class="h-[200px] lg:h-auto bg-[url(hi-horizon/me_working.jpg)] bg-cover bg-center"></div> -->
 </div>
