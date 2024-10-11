@@ -531,6 +531,9 @@ video {
 .hidden {
   display: none;
 }
+.h-20 {
+  height: 5rem;
+}
 .h-6 {
   height: 1.5rem;
 }
@@ -612,29 +615,29 @@ video {
 .border-l-8 {
   border-left-width: 8px;
 }
-.border-redBlack {
+.border-darkShade {
   --tw-border-opacity: 1;
   border-color: rgb(61 10 31 / var(--tw-border-opacity));
 }
 .bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(43 58 103 / var(--tw-bg-opacity));
+  background-color: rgb(124 153 180 / var(--tw-bg-opacity));
 }
-.bg-red {
+.bg-lightGreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(208 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(125 205 133 / var(--tw-bg-opacity));
 }
-.bg-redBlack {
+.bg-orange {
   --tw-bg-opacity: 1;
-  background-color: rgb(61 10 31 / var(--tw-bg-opacity));
+  background-color: rgb(221 96 49 / var(--tw-bg-opacity));
 }
 .bg-warmWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(255 242 235 / var(--tw-bg-opacity));
 }
-.bg-yellow {
+.bg-wineRed {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 186 8 / var(--tw-bg-opacity));
+  background-color: rgb(152 38 73 / var(--tw-bg-opacity));
 }
 .bg-\[url\(hi-horizon\/me_working\.jpg\)\] {
   background-image: url(hi-horizon/me_working.jpg);
@@ -664,6 +667,10 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -677,6 +684,12 @@ video {
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-left {
   text-align: left;
@@ -716,7 +729,7 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.text-redBlack {
+.text-darkShade {
   --tw-text-opacity: 1;
   color: rgb(61 10 31 / var(--tw-text-opacity));
 }
@@ -731,20 +744,12 @@ video {
 @layer darkMode {
 }
 
-.hover\:stroke-red:hover {
-  stroke: #D00000;
-}
-
-.hover\:text-red:hover {
+.hover\:text-wineRed:hover {
   --tw-text-opacity: 1;
-  color: rgb(208 0 0 / var(--tw-text-opacity));
+  color: rgb(152 38 73 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
-
-  .md\:p-16 {
-    padding: 4rem;
-  }
 
   .md\:px-8 {
     padding-left: 2rem;
