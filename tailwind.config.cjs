@@ -5,16 +5,13 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
-      redBlack: '#3d0a1f',
-      red: '#D00000',
-      yellow: '#FFBA08',
-      blue: '#2B3A67',
-      green: '#1EFFBC',
-      lightRed: "#FCE9DA",
-      lightGreen: "#041d14",
-      coldWhite: '#F9F0F3',
+      darkShade: '#3d0a1f',
+      lightGreen: '#7DCD85',
+      wineRed: '#982649',
+      blue: '#7C99B4',
+      orange: "#DD6031",
       warmWhite: "#FFF2EB", 
-      warmDark: "#281001"
+      warmDark: "#62182F"
     },
     extend: {
       zIndex: {

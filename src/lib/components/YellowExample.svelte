@@ -4,9 +4,10 @@
     export const HiHorizonContainerHeightStore = writable(0);
 </script>
 
-<Frame id="YellowExample" borderColour="bg-yellow" bgColour="bg-warmWhite">
-    <h1 class="text-2xl font-extrabold">My next adventure awaits!</h1>
-    <p class="">
-        I'm eager to seek a position at another project in the future, maybe this will be yours ;)
-    </p>
-</Frame>
+<div class="pt-8">
+    <Frame id="YellowExample" borderColour="bg-lightGreen" bgColour="bg-warmWhite">
+        <h1 class="text-2xl font-extrabold">My next adventure awaits!</h1>
+        <p class="h-20">
+        </p>
+    </Frame>
+</div>

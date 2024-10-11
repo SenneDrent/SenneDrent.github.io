@@ -18,7 +18,7 @@ if text smaller than screen: side fit that stretch until max-h-screen
 
 <div id="HihorizonContainer" class="flex flex-col lg:flex-row align py-8 text-left z-10">
     <div style="flex: 3 1 0;" class="">
-    <Frame borderColour="bg-red" bgColour="bg-warmWhite" id="HiHorizonTextContainer">
+    <Frame borderColour="bg-wineRed" bgColour="bg-warmWhite" id="HiHorizonTextContainer">
         <div id="HiHorizonTextHeightContainer" class="space-y-2" bind:clientHeight={HiHorizonTextHeight}>
             <h1 class="text-2xl font-extrabold">Hi-Horizon Racing Team</h1>
             <p class="">

@@ -6,7 +6,8 @@
     [
         [Front],
         [HiHorizon],
-        [TuDelft, YellowExample],
+        [TuDelft, Turff],
+        [YellowExample],
         [Contact],
     ]
 </script>
@@ -19,6 +20,8 @@
     
     import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
+    import Turff from '../lib/components/Turff.svelte';
+    import { fly } from 'svelte/transition';
 
     onMount(() => onLoad.set(true));
 
@@ -31,7 +34,7 @@
 <div class='container flex text-center flex-col items-stretch w-full px-2 md:px-8 lg:px-16'>
         {#each slides as slide}
             {#if slide.length === 1}
-                <svelte:component this={slide[0]} />
+                <svelte:component this={slide[0]}/>
             {:else if slide.length === 2}
                 <div class="flex gap-8 justify-between flex-wrap">
                     <div class="flex-1 flex">
