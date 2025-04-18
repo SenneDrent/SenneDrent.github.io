@@ -21,31 +21,31 @@ if text smaller than screen: side fit that stretch until max-h-screen
     <Frame borderColour="bg-wineRed" bgColour="bg-warmWhite" id="HiHorizonTextContainer">
         <div id="HiHorizonTextHeightContainer" class="space-y-2" bind:clientHeight={HiHorizonTextHeight}>
             <h1 class="text-2xl font-extrabold">Hi-Horizon Racing Team</h1>
+            <p class="italic">Software Engineer for a Boat driven by solar power.</p>
             <p class="">
-                Software programmer for a Boat driven by solarPower.
-                This project has been started with friends and we have been working since 2019. We are competing in the Solar Sport One races
-                were the goal is to make your Boat as efficient and fast as possible
-                I am in charge of programming for the embedded telemetry system inside the boat, as well as the data dashboard website.
+                Hi-Horizon is a racing Team created from friends and we have been working on this since 2019. 
+                We are competing in the Solar Sport One competition where the goal is to be the most efficient and fast Boat as possible.
+                I'm in charge of programming for the embedded telemetry system inside the boat, as well as the data dashboard website. 
+                On the side i'm doing some PCB design as well.
             </p>
-            <h2 class="text-xl font-extrabold">On board telemetry</h2>
+            <h2 class="text-xl font-extrabold">Embedded telemetry</h2>
             <p class="">
-                Part of my work is the on board telemetry systems, which gathers data from multiple sensors, and saves these locally on a SD card and
-                display it on a screen inside the boat, but also sends data to an telemetry website through internet.
+                Part of my work is the Embedded telemetry systems placed onboard. The goal is to gather data which serves as information to the pilot
+                as well as use the data in our racing strategy.
                 <br>
                 The system itself consist of multiple sensors coming from different components inside the boat,
-                like the motorcontroller, battery or solar panels.
-                These are connected to microcontrollers through a variety of connections with different data Protocols like UART, I2C, SPI and CANBUS.
-                THe microcontrollers used include boards which use the Arduino framework based on C++, like Teensy or ESP, but there is also being worked on using stm32
-                boards, using the stm32_HAL based on C.
+                like the ESC, battery or solar panels.
+                To gather data from all these sensors and proccess them we use STM32 microcontrollers as well as an ESP8266 to send data over the internet.
+                These microcontrollers are programmed in C/C++. 
+                To send/receive data to/from different components, communication Protocols like UART, I2C, SPI and CANBUS are used.
             </p>
-            <h2 class="text-xl font-extrabold">Telemetry Website</h2>
+            <h2 class="text-xl font-extrabold">Telemetry Dashboard</h2>
             <p class="">
-                This website is able to view the data collected from to boat on a dashboard. This is useful for strategy calculations we make on land,
-                think of for example "for long can we drive until the battery is empty?". The data is displayed asynchronously through AJAX request with the database.
-                Other features include being able to record periods of time so it can be viewed at with a graph.
+                This Dashboard is able to view the live data collected from to boat. This is useful as we can calculate race strategy on land.
+                An example of such strategy would be asking "for how long can we sail until the battery is empty?". 
                 <br>
-                The website gets this data through the MQTT protocol in which it receives data from the esp inside the boat.
-                The website itself is made with PHP, javascript and sqllite.
+                The dashoard gets this data through the MQTT protocol in which it receives data from the ESP8266 inside the boat. 
+                It's made in Sveltekit with a python script for handling the MQTT connection.
             </p>
         </div>
     </Frame>

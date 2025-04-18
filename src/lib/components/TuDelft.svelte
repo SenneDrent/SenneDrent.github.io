@@ -7,7 +7,7 @@
 <Frame borderColour="bg-blue" bgColour="bg-warmWhite" id="TuDelftContainer">
     <h1 class="text-2xl font-extrabold">College</h1>
     <p class="">
-        2nd year student Bachelor of Computer Science and Engineering at the Technical University of Delft
+        3nd year student Bachelor of Computer Science and Engineering at the Technical University of Delft
         <br>
         (NL) In bezit van mijn propedeuse
     </p>
