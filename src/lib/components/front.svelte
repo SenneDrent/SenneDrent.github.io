@@ -35,9 +35,9 @@
 
 <svelte:window bind:innerHeight={innerHeight} />
 
-<div bind:clientHeight={containerHeight} id="introContainer" class="flex justify-center items-center h-screen p-12">
+<div bind:clientHeight={containerHeight} id="introContainer" class="flex justify-center items-center h-[90vh]">
     {#if $onLoad === true}
-        <h1 in:fade={{duration: 1250}} bind:clientHeight={textboxHeight} style="margin-bottom: {toAdjust}px; opacity: {opacity};" class="fixed {display} align-middle text-3xl p-5 font-extrabold overflow-hidden text-darkShade">
+        <h1 in:fade={{duration: 1250}} bind:clientHeight={textboxHeight} style="margin-bottom: {toAdjust}px; opacity: {opacity};" class="fixed {display} align-middle p-5 md:text-3xl text-xl font-extrabold overflow-hidden text-center text-darkShade w-full">
             Welcome to the Portfolio of Senne Drent
         </h1>
     {/if}

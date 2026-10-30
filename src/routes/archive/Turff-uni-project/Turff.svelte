@@ -1,6 +1,6 @@
 <script>
 
-    import Frame from "./frame.svelte";
+    import Frame from "../../../lib/components/frame.svelte";
 
 </script>
 

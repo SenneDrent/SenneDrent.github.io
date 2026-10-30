@@ -2,26 +2,35 @@
     export const YscrollStore = writable(0);
     export const onLoad = writable(false);
 
-    export let slides = 
-    [
-        [Front],
-        [HiHorizon],
-        [TuDelft, Turff],
-        [YellowExample],
-        [Contact],
+
+    // have simple way of content display, based on json format
+    const experienceCards: CardInfo[] = [
+        {
+            title: "Hi-Horizon Racing Team",
+            image: "/hi-horizon/me_working.png",
+            contentLink: "/experiences/hi-horizon-racing-team"
+        },
+        {
+            title: "Lagersmit",
+            image: "/lagersmit/Logo.jpeg",
+            contentLink: "/experiences/lagersmit"
+        },
+        {
+            title: "Education",
+            image: "/education/logo_rgb.svg",
+            contentLink: "/experiences/education"
+        },
+
     ]
+
 </script>
 <script lang="ts">
     import Front from '@components/front.svelte'
-    import HiHorizon from '@components/HiHorizon.svelte';
-    import TuDelft from '@components/TuDelft.svelte';
-    import YellowExample from '@components/YellowExample.svelte';
-    import Contact from '@components/contact.svelte';
-    
+    import Contact from "@components/contact.svelte";
+
+    import Card from "@components/Card.svelte";
+    import { writable } from "svelte/store";
     import { onMount } from 'svelte';
-    import { writable } from 'svelte/store';
-    import Turff from '../lib/components/Turff.svelte';
-    import { fly } from 'svelte/transition';
 
     onMount(() => onLoad.set(true));
 
@@ -31,19 +40,10 @@
 
 <svelte:window bind:scrollY={Yscroll}/>
 
-<div class='container flex text-center flex-col items-stretch w-full px-2 md:px-8 lg:px-16'>
-        {#each slides as slide}
-            {#if slide.length === 1}
-                <svelte:component this={slide[0]}/>
-            {:else if slide.length === 2}
-                <div class="flex gap-8 justify-between flex-wrap">
-                    <div class="flex-1 flex">
-                        <svelte:component this={slide[0]}/>
-                    </div>
-                    <div class="flex-1 flex">
-                        <svelte:component this={slide[1]}/>
-                    </div>
-                </div>
-            {/if}
-        {/each}
+<Front/>
+<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+{#each experienceCards as card} 
+    <Card cardInfo={card} ></Card>
+{/each}
 </div>
+<Contact/>

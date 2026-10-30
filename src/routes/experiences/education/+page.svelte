@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-    import Frame from "./frame.svelte";
+    import Frame from "../../../lib/components/frame.svelte";
     import { writable } from "svelte/store";
     export const HiHorizonContainerHeightStore = writable(0);
 </script>
@@ -7,8 +7,10 @@
 <Frame borderColour="bg-blue" bgColour="bg-warmWhite" id="TuDelftContainer">
     <h1 class="text-2xl font-extrabold">College</h1>
     <p class="">
-        3nd year student Bachelor of Computer Science and Engineering at the Technical University of Delft
+        1st year MSc computer science at TU delft unversity of technology
         <br>
-        (NL) In bezit van mijn propedeuse
+        graduate BSc computer science at TU delft unversity of technology in 2026
+        <br>
+        more info coming soon
     </p>
 </Frame>

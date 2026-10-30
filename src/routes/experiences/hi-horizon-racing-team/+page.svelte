@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-    import Frame from "./frame.svelte";
+    import Frame from "$lib/components/frame.svelte";
     import { writable } from "svelte/store";
     export const HiHorizonContainerHeightStore = writable(0);
 </script>

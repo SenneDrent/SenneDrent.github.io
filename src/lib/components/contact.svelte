@@ -13,7 +13,6 @@
                     <h1 class="text-2xl text-center">Interested in working with me? Reach out to me through:</h1>
                     <ul class="py-6 space-y-2">
                         <li>Email: &nbsp&nbsp&nbsp<a href='mailto:sennedrent@gmail.com' class="hover:text-wineRed">sennedrent@gmail.com</a></li>
-                        <li>Phone: &nbsp<a href='tel:+31612242235' class="hover:text-wineRed">+31 6 12 24 22 35</a></li>
                     </ul>
                 </div>
                 <div>
