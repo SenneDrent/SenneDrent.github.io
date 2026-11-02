@@ -21,31 +21,34 @@ if text smaller than screen: side fit that stretch until max-h-screen
     <Frame borderColour="bg-wineRed" bgColour="bg-warmWhite" id="HiHorizonTextContainer">
         <div id="HiHorizonTextHeightContainer" class="space-y-2" bind:clientHeight={HiHorizonTextHeight}>
             <h1 class="text-2xl font-extrabold">Hi-Horizon Racing Team</h1>
-            <p class="italic">Software Engineer for a Boat driven by solar power.</p>
+            <!-- <p class="italic">Software Engineer for a Boat driven by solar power.</p> -->
             <p class="">
-                Hi-Horizon is a racing Team created from friends and we have been working on this since 2019. 
-                We are competing in the Solar Sport One competition where the goal is to be the most efficient and fast Boat as possible.
-                I'm in charge of programming for the embedded telemetry system inside the boat, as well as the data dashboard website. 
-                On the side i'm doing some PCB design as well.
+                Hi-horizon racing team is a hobby project me and friends from highschool work on.
+                We build a one person solar powered boat, in which we perform races each year in Akkrum and Hungary.
+                The team has been founded in 2019 and 
+                for me this was a great place to learn some practical skills in webdev, embedded and even some electrical design.
+            </p>
+            <h2 class="text-xl font-extrabold">Battery</h2>
+            <p>
+                One of the biggest projects for me was the battery. This 60V li-ion battery is a 1.5 Kwh buffer for when the sun is not shining as much.
+                I did a large part of the electrical design. 
+                which involved creating PCBs for precharge, power distribution and other control signals.
+                But also choosing components such as relays and dc-converters.
+                On the software side, I programmed the BMS firmware, making sure the control circuits go on and off correctly.
             </p>
             <h2 class="text-xl font-extrabold">Embedded telemetry</h2>
             <p class="">
                 Part of my work is the Embedded telemetry systems placed onboard. The goal is to gather data which serves as information to the pilot
                 as well as use the data in our racing strategy.
                 <br>
-                The system itself consist of multiple sensors coming from different components inside the boat,
-                like the ESC, battery or solar panels.
-                To gather data from all these sensors and proccess them we use STM32 microcontrollers as well as an ESP8266 to send data over the internet.
-                These microcontrollers are programmed in C/C++. 
-                To send/receive data to/from different components, communication Protocols like UART, I2C, SPI and CANBUS are used.
+                We gather data from a lot of different sensors and components, such as the battery, ESC, GPS and so on. 
+                The telemetry system logs data to an SD card, displays information to the pilot and sends data to land so we can monitor it for strategy.
             </p>
             <h2 class="text-xl font-extrabold">Telemetry Dashboard</h2>
             <p class="">
-                This Dashboard is able to view the live data collected from to boat. This is useful as we can calculate race strategy on land.
-                An example of such strategy would be asking "for how long can we sail until the battery is empty?". 
-                <br>
-                The dashoard gets this data through the MQTT protocol in which it receives data from the ESP8266 inside the boat. 
-                It's made in Sveltekit with a python script for handling the MQTT connection.
+                The dashboard for viewing the boat data was one of my earliest responsibilities. 
+                I did a few revisions, going from PHP website to Svelte and ending up making a Svelte + Tauri application. 
+                The Dashboard connects with the boat through MQTT and in the future should also be able to connect with a SocketCan device.
             </p>
         </div>
     </Frame>
