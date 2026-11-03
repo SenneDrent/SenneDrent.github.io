@@ -42,7 +42,7 @@ if text smaller than screen: side fit that stretch until max-h-screen
                 </div>
                 <img src="/hi-horizon/battery.jpeg" class="lg:w-1/2"/>
             </div>
-            <div class="w-full flex justify-center py-5">
+            <div class="w-full flex flex-col lg:flex-row justify-center py-5">
                 <div class="pr-5">
                     <h2 class="text-xl font-extrabold">Embedded telemetry</h2>
                     <p class="">
@@ -55,7 +55,7 @@ if text smaller than screen: side fit that stretch until max-h-screen
                 </div>
                 <img src="/hi-horizon/MTU.jpeg" class="lg:w-1/2"/>
             </div>
-            <div class="w-full flex justify-center py-5">
+            <div class="w-full flex flex-col lg:flex-row justify-center py-5">
                 <div class="pr-5">
                     <h2 class="text-xl font-extrabold">Telemetry Dashboard</h2>
                     <p class="">
