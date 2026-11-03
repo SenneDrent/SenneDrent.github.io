@@ -4,13 +4,17 @@
     export const HiHorizonContainerHeightStore = writable(0);
 </script>
 
+<div class="xl:px-40 lg:px-20">
 <Frame borderColour="bg-blue" bgColour="bg-warmWhite" id="TuDelftContainer">
     <h1 class="text-2xl font-extrabold">College</h1>
     <p class="">
-        1st year MSc computer science at TU delft unversity of technology
+        Starting out in 2022, I did my BSc computer science at TU Delft university of technology.
+        graduating in 2026 with my research "Graph pre-processing strategies for minimum flow decomposition in haplotype
+aware genome assembly". 
         <br>
-        graduate BSc computer science at TU delft unversity of technology in 2026
         <br>
-        more info coming soon
+        In the later half of 2026 I continued at TU delft unversity of technology and started MSc computer science. 
+        Which i'm currently following as of now.
     </p>
 </Frame>
+</div>

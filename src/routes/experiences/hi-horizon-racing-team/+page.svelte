@@ -16,8 +16,7 @@ if text larger than screen: side fit with space between images
 if text smaller than screen: side fit that stretch until max-h-screen
 -->
 
-<div id="HihorizonContainer" class="flex flex-col lg:flex-row align py-8 text-left z-10">
-    <div style="flex: 3 1 0;" class="">
+<div class="xl:px-20 lg:px-10">
     <Frame borderColour="bg-wineRed" bgColour="bg-warmWhite" id="HiHorizonTextContainer">
         <div id="HiHorizonTextHeightContainer" class="space-y-2" bind:clientHeight={HiHorizonTextHeight}>
             <h1 class="text-2xl font-extrabold">Hi-Horizon Racing Team</h1>
@@ -68,6 +67,4 @@ if text smaller than screen: side fit that stretch until max-h-screen
             </div>
         </div>
     </Frame>
-    </div>    
-    <!-- <div style="flex:1 1 0" class="h-[200px] lg:h-auto bg-[url(hi-horizon/me_working.jpg)] bg-cover bg-center"></div> -->
 </div>
