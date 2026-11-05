@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portfolio Senne</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/0.c4dec495.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.af37523f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.5dc49d7b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c0b923ba.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.35a1bcc1.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.8261e470.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.058cf81a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.30028c68.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.d6c5ce5e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/frame.369bb89a.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-white" style="background-image: url('/pink_carpet_background_med.avif'); background-attachment: fixed;">
+		<div style="display: contents">
+
+
+
+<div class="w-full p-4 font-semibold text-base flex flex-col items-center"><a href="/" class="text-xl hover:text-orange">Go back</a>
+
+
+<div class="xl:px-20 lg:px-10"><div class="bg-warmWhite border rounded font-mono font-normal text-darkShade"><div class="h-4 bg-darkShade"></div>
+    <div class="p-4"><div id="HiHorizonTextHeightContainer" class="space-y-2"><h1 class="text-2xl font-extrabold">Hi-Horizon Racing Team</h1>
+            
+
+            <p class="">Hi-horizon racing team is a hobby project me and friends from highschool work on.
+                We build a one person solar powered boat, in which we perform races each year at Akkrum in the Netherlands and at Balaton in Hungary.
+                The team has been founded in 2019 and 
+                for me this was a great place to learn some practical skills in webdev, embedded and even some electrical design.
+            </p>
+            <div class="w-full flex flex-col lg:flex-row justify-center py-5"><div class="pr-5"><h2 class="text-xl font-extrabold">Battery</h2>
+                    <p>One of the biggest projects for me was the battery. This 60V li-ion battery is a 1.5 Kwh buffer for when the sun is not shining as much.
+                        I did a large part of the electrical design. 
+                        which involved creating PCBs for precharge, power distribution and other control signals.
+                        But also choosing components such as relays and dc-converters.
+                        On the software side, I programmed the BMS firmware, making sure the control circuits go on and off correctly.
+                    </p></div>
+                <img src="/hi-horizon/battery.jpeg" class="lg:w-1/2"></div>
+            <div class="w-full flex flex-col lg:flex-row justify-center py-5"><div class="pr-5"><h2 class="text-xl font-extrabold">Embedded telemetry</h2>
+                    <p class="">Part of my work is the Embedded telemetry systems placed onboard. The goal is to gather data which serves as information to the pilot
+                        as well as use the data in our racing strategy.
+                        <br>
+                        We gather data from a lot of different sensors and components, such as the battery, ESC, GPS and so on. 
+                        The telemetry system logs data to an SD card, displays information to the pilot and sends data to land so we can monitor it for strategy.
+                    </p></div>
+                <img src="/hi-horizon/MTU.jpeg" class="lg:w-1/2"></div>
+            <div class="w-full flex flex-col lg:flex-row justify-center py-5"><div class="pr-5"><h2 class="text-xl font-extrabold">Telemetry Dashboard</h2>
+                    <p class="">The dashboard for viewing the boat data was one of my earliest responsibilities. 
+                        I did a few revisions, going from PHP website to Svelte and ending up making a Svelte + Tauri application. 
+                        The Dashboard connects with the boat through MQTT and in the future should also be able to connect with a SocketCan device.
+                    </p></div>
+                <img src="/hi-horizon/dashboard.png" class="lg:w-1/2"></div></div></div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_4v7uog = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.af37523f.js"),
+						import("../_app/immutable/entry/app.8261e470.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
