@@ -3,8 +3,9 @@
     export let bgColour:string;
 </script>
 
-<div class='w-full {borderColour} text-left space-y-4 p-7 z-10 pt-12 rounded-sm border-l-8 border-darkShade' {...$$restProps}>
-    <div class="flex flex-col {bgColour} rounded-sm text-greenBlack p-8 pt-4 h-full">
+<div class="bg-warmWhite border rounded font-mono font-normal text-darkShade">
+    <div class="h-4 bg-darkShade"></div>
+    <div class="p-4">
         <slot></slot>
     </div>
 </div>
