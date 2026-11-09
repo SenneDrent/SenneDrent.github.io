@@ -4,7 +4,7 @@
     export const HiHorizonContainerHeightStore = writable(0);
 </script>
 
-<div class="xl:px-40 lg:px-20">
+
 <Frame borderColour="bg-blue" bgColour="bg-warmWhite" id="TuDelftContainer">
     <h1 class="text-2xl font-extrabold">College</h1>
     <p class="">
@@ -17,4 +17,3 @@ aware genome assembly".
         Which i'm currently following as of now.
     </p>
 </Frame>
-</div>

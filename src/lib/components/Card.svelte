@@ -11,15 +11,15 @@
         {'{'}
         <div class="pl-3">
                 "image":
-                <div class="flex items-end">
-                    <img alt={cardInfo.contentLink} src={cardInfo.image} class="object-fit w-80 h-80 xl:w-96 xl:h-96 rounded-t bg-intenseWhite o">
+                <div class="flex items-end pb-2">
+                    <img alt={cardInfo.contentLink} src={cardInfo.image} class="object-fit w-80 h-80 xl:w-96 xl:h-96 rounded bg-intenseWhite o">
                     <div>,</div>
                 </div>
             <div> "title": "{cardInfo.title}",</div>
             <div>
                 "link": <span class="hover:text-wineRed italic hover:underline">"{cardInfo.contentLink}"</span>,
             </div>
-            </div>
+        </div>
         {'}'}
         </a>
     </div>
